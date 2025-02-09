@@ -1,9 +1,8 @@
 vim.filetype.add({
-	pattern = {
-		["${chaos}/.*"] = "chaos",
-		["${chaos}/dairy/personal/.*"] = "chaos",
-		["**/*.scr"] = "chaos",
-		["**/*.ch"] = "chaos",
+	extension	= {
+		ch = "chaos",
+		scr = "chaos",
+		reading = "chaos"
 	}
 })
 
