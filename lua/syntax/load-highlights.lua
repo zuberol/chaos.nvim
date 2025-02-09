@@ -1,6 +1,4 @@
-local M = {}
-
-M.load_highlights = function(event)
+local function load_highlights()
 	local ns = vim.api.nvim_create_namespace("chaos")
 	local win = vim.api.nvim_get_current_win()
 	vim.api.nvim_win_set_hl_ns(win, ns)
@@ -50,5 +48,4 @@ M.load_highlights = function(event)
 	end
 	vim.api.nvim_win_set_hl_ns(win, ns)
 end
-
-return M
+load_highlights()
