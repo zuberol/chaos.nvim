@@ -1,7 +1,5 @@
-vim.api.nvim_err_writeln("init 1 or not ffs")
 return {
-	init = function()
-		vim.api.nvim_err_writeln("init 2 or not ffs")
+	setup = function(opts)
 		vim.filetype.add({
 			extension	= {
 				ch = "chaos",
@@ -9,8 +7,5 @@ return {
 				reading = "chaos"
 			}
 		})
-	end,
-	setup = function(opts)
-		vim.api.nvim_err_writeln("running setup for chaos")
 	end
 }
