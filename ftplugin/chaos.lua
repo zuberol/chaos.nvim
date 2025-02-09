@@ -1,13 +1,3 @@
---[[
-vim.filetype.add({
-	extension	= {
-		ch = "chaos",
-		scr = "chaos",
-		reading = "chaos"
-	}
-})
---]]
-
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = "chaos",
 	callback = function(event)
