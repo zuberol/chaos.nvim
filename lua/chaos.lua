@@ -1,5 +1,5 @@
 return {
-	init = function(){
+	init = function()
 		vim.filetype.add({
 			extension	= {
 				ch = "chaos",
@@ -7,5 +7,5 @@ return {
 				reading = "chaos"
 			}
 		})
-	}
+	end
 }
