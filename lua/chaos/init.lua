@@ -1,6 +1,7 @@
-vim.api.nvim_err_writeln("init or not ffs")
+vim.api.nvim_err_writeln("init 1 or not ffs")
 return {
 	init = function()
+		vim.api.nvim_err_writeln("init 2 or not ffs")
 		vim.filetype.add({
 			extension	= {
 				ch = "chaos",
