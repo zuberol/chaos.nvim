@@ -42,6 +42,7 @@ hi! def link chaos.block 							chaos.white.smoke
 hi! def link chaos.declaration				chaos.golden
 hi! def link chaos.type.colon					chaos.golden
 hi! def link chaos.type.meta					chaos.blue.sky
+hi! def link chaos.type.meta.gold			chaos.golden
 hi! def link chaos.type.data					chaos.green.lime
 hi! def link chaos.type.try						chaos.red.rose
 hi! def link chaos.type.workload			chaos.red.rose
@@ -62,8 +63,9 @@ syn region chaos.quote.single oneline matchgroup=chaos.syntax   start=_'_ end=/'
 syn region chaos.quote.double oneline matchgroup=chaos.syntax  start=_"_ end=_"_
 syn region chaos.quote.backtick oneline matchgroup=chaos.syntax start=_`_ end=_`_
 syn region chaos.quote.escape oneline matchgroup=chaos.syntax  start=_-''_ end=_''-_
-syn cluster chaos.types contains=chaos.type.meta, chaos.type.data, chaos.type.try, chaos.type.workload
+syn cluster chaos.types contains=chaos.type.meta, chaos.type.meta.gold, chaos.type.data, chaos.type.try, chaos.type.workload
 syn keyword chaos.type.meta  rl rf next bfr oft switch when dump fr needs opt done nextgroup=@chaos.type.after
+syn keyword chaos.type.meta.gold wish nextgroup=@chaos.type.after
 syn keyword chaos.type.data  inf i res rs log feedback proposal sn def hint code eg ie cite reason hmm conclusion problem desc cm data story glossary roadmap ms usage more goal req about requires scenario cheatsheet tldr nextgroup=@chaos.type.after
 syn keyword chaos.type.try  try reading considering research nextgroup=@chaos.type.after
 syn keyword chaos.type.workload todo read learn conf check impl consider refactor watch write document define fix nextgroup=@chaos.type.after

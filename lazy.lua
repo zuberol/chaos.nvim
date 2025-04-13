@@ -5,6 +5,7 @@ return {
 			extension	= {
 				ch = "chaos",
 				scr = "chaos",
+				tldr = "chaos",
 				reading = "chaos"
 			}
 		})
