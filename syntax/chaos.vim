@@ -66,7 +66,7 @@ syn region chaos.quote.escape oneline matchgroup=chaos.syntax  start=_-''_ end=_
 syn cluster chaos.types contains=chaos.type.meta, chaos.type.meta.gold, chaos.type.data, chaos.type.try, chaos.type.workload
 syn keyword chaos.type.meta  rl rf next bfr oft switch when dump fr needs opt done nextgroup=@chaos.type.after
 syn keyword chaos.type.meta.gold wish nextgroup=@chaos.type.after
-syn keyword chaos.type.data  inf i res rs log feedback proposal sn def hint code eg ie cite reason hmm conclusion problem desc cm data story glossary roadmap ms usage more goal req about requires scenario cheatsheet tldr summary feat nextgroup=@chaos.type.after
+syn keyword chaos.type.data  inf i res rs log feedback proposal sn def hint code eg ie cite reason hmm conclusion problem desc cm data story glossary roadmap ms usage more goal req about requires scenario cheatsheet tldr summary feat want nextgroup=@chaos.type.after
 syn keyword chaos.type.try  try reading considering research nextgroup=@chaos.type.after
 syn keyword chaos.type.workload todo read learn conf check impl consider refactor watch write document define fix nextgroup=@chaos.type.after
 syn match chaos.type.opt _?_ nextgroup=@chaos.types, chaos.type.colon
